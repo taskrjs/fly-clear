@@ -1,5 +1,5 @@
-const {join} = require('path');
-const {existsSync} = require('fs');
+const join = require('path').join;
+const exists = require('fs').existsSync;
 const co = require('bluebird').coroutine;
 const test = require('tape');
 const Fly = require('fly');
@@ -13,15 +13,14 @@ const fly = new Fly({
 	}],
 	tasks: {
 		* a(o) {
-			const {t, src} = o.val;
+			const t = o.val.t;
 			t.true('clear' in fly, 'attach `clear` to fly global');
 			// t.true('clear' in f, 'attach `clear` to fly context');
-			yield this.clear(src);
+			yield this.clear(o.val.src);
 		}
 	}
 });
 
-const exists = file => existsSync(file);
 const create = file => fly.$.write(file);
 
 test('fly-clear: filepath (task)', co(function * (t) {
