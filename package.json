@@ -1,12 +1,44 @@
 {
   "name": "fly-clear",
   "version": "0.0.0",
-  "description": "fly.clear prototype method",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Remove one or multiple directories",
+  "license": "MIT",
+  "repository": "flyjs/fly-clear",
+  "author": {
+    "name": "Luke Edwards",
+    "email": "luke.edwards05@gmail.com",
+    "url": "https://lukeed.com"
   },
-  "keywords": [],
-  "author": "Luke Edwards <luke.edwards05@gmail.com>",
-  "license": "MIT"
+  "engines": {
+    "node": ">=4.6"
+  },
+  "scripts": {
+    "test": "xo && tape test/*.js | tap-spec"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "clear",
+    "del",
+    "delete",
+    "fly",
+    "fly-plugin",
+    "rimraf",
+    "remove"
+  ],
+  "dependencies": {
+    "arrify": "^1.0.1",
+    "bluebird": "^3.4.7",
+    "rimraf": "^2.5.4"
+  },
+  "devDependencies": {
+    "fly": "beta",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true
+  }
 }
