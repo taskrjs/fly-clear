@@ -39,6 +39,9 @@
     "xo": "^0.16.0"
   },
   "xo": {
-    "esnext": true
+    "esnext": true,
+    "rules": {
+      "no-use-extend-native/no-use-extend-native": 0
+    }
   }
 }
