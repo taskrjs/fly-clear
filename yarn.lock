@@ -225,7 +225,7 @@ cli-width@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.1.0.tgz#b234ca209b29ef66fc518d9b98d5847b00edf00a"
 
-clor@^5.0.0:
+clor@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/clor/-/clor-5.0.1.tgz#597c9183a9ebc033d671721333c2ca862d1dfabf"
 
@@ -673,12 +673,12 @@ flat-cache@^1.2.1:
     graceful-fs "^4.1.2"
     write "^0.2.1"
 
-fly@beta:
-  version "2.0.10-beta"
-  resolved "https://registry.yarnpkg.com/fly/-/fly-2.0.10-beta.tgz#e62ccf687bd899d4e01f95ec264f515df708120a"
+fly@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/fly/-/fly-2.0.2.tgz#9b4764a81f9d39f7b3b3a754cd00a68c4e8fbfb6"
   dependencies:
     bluebird "^3.4.7"
-    clor "^5.0.0"
+    clor "^5.0.1"
     glob "^7.1.1"
     minimist "^1.2.0"
     mkdirp "^0.5.1"
