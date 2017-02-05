@@ -1,4 +1,4 @@
-const {join} = require('path');
+const join = require('path').join;
 const exists = require('fs').existsSync;
 const co = require('bluebird').coroutine;
 const test = require('tape');
